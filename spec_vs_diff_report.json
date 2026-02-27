@@ -1,0 +1,30 @@
+{
+  "kind": "spec_vs_diff_report",
+  "version": "1.0",
+  "generatedAt": "2026-02-27T10:39:39.078Z",
+  "summary": "The diff implements all four requirements: REQ-11 (black/red theme via tailwind.config.js and index.css), REQ-12 (INR pricing ₹599/₹1499/₹299 in Services.tsx), REQ-13 (phone +91 8527230903 as tel: link, no address in Contact.tsx), and REQ-14 (Monday–Sunday 8:00 AM–4:00 PM working hours in Contact.tsx). The About.tsx still uses garage-gold class names but these now resolve to red via token remapping. One hallucinated feature was identified: a Doorstep Detailing service tier added beyond the three requested tiers.",
+  "missing_requirements": [],
+  "hallucinated_features": [
+    {
+      "description": "A 'Doorstep Detailing — Get a Quote' option was added to the service selection dropdown in Contact.tsx and referenced in the Footer.tsx services list, representing a fourth service tier beyond the three requested.",
+      "reason": "The build request explicitly lists 'Adding new service tiers beyond what is requested' as a non-goal. Only Basic Exterior Wash, Interior + Exterior, and Bike Wash were requested.",
+      "evidence": [
+        "frontend/src/components/Contact.tsx",
+        "frontend/src/components/Footer.tsx"
+      ]
+    }
+  ],
+  "confidence": 0.78,
+  "changed_files": [
+    "frontend-file-summaries.txt",
+    "frontend/src/components/About.tsx",
+    "frontend/src/components/Contact.tsx",
+    "frontend/src/components/Footer.tsx",
+    "frontend/src/components/Hero.tsx",
+    "frontend/src/components/Navbar.tsx",
+    "frontend/src/components/Services.tsx",
+    "frontend/src/index.css",
+    "frontend/tailwind.config.js",
+    "project_state.json"
+  ]
+}

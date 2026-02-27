@@ -1,0 +1,176 @@
+{
+  "schemaVersion": "1.0.0",
+  "projectStateVersion": 7,
+  "summary": "Website for Kare Detailing Garage — an auto detailing business website with black/red theme, Indian Rupee pricing (Basic Exterior Wash ₹599, Interior + Exterior ₹1499, Bike Wash ₹299), phone number +91 8527230903, no address, and working hours Monday–Sunday 8AM–4PM.",
+  "architectural_notes": [],
+  "known_issues": [],
+  "isFixRequest": false,
+  "existing_features": [
+    {
+      "id": "feature-create-a-homepage-with-a-full-width-hero-section-featuring-the-business-name-kare-detailing-garage-a-tagline-and-a-prominent-call-to-action-button-e-g-book-now-or-get-a-quote-that-scrolls-to-the-contact-section",
+      "title": "Create a homepage with a full-width hero section featuring the business name 'Kare Detailing Garage', a tagline, and a prominent call-to-action button (e.g., 'Book Now' or 'Get a Quote') that scrolls to the contact section.",
+      "reqIds": [
+        "REQ-1"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-create-a-services-section-listing-detailing-packages-with-names-brief-descriptions-and-pricing-include-at-least-3-tiers-basic-wash-full-detail-and-premium-detail-package",
+      "title": "Create a Services section listing detailing packages with names, brief descriptions, and pricing. Include at least 3 tiers: Basic Wash, Full Detail, and Premium Detail package.",
+      "reqIds": [
+        "REQ-2"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-create-an-about-section-that-introduces-kare-detailing-garage-describing-the-business-mission-values-and-commitment-to-quality-auto-detailing",
+      "title": "Create an About section that introduces Kare Detailing Garage, describing the business mission, values, and commitment to quality auto detailing.",
+      "reqIds": [
+        "REQ-3"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-create-a-contact-booking-section-with-a-form-that-collects-name-phone-number-email-preferred-service-and-preferred-date-time-on-submission-store-the-inquiry-in-the-backend-and-display-a-confirmation-message-to-the-user",
+      "title": "Create a Contact / Booking section with a form that collects name, phone number, email, preferred service, and preferred date/time. On submission, store the inquiry in the backend and display a confirmation message to the user.",
+      "reqIds": [
+        "REQ-4"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-create-a-sticky-navigation-bar-with-links-to-each-section-home-services-about-contact-and-the-business-logo-name-the-nav-should-be-responsive-with-a-hamburger-menu-on-mobile",
+      "title": "Create a sticky navigation bar with links to each section (Home, Services, About, Contact) and the business logo/name. The nav should be responsive with a hamburger menu on mobile.",
+      "reqIds": [
+        "REQ-5"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-apply-a-bold-high-contrast-visual-theme-across-the-entire-website-dark-charcoal-black-backgrounds-with-bright-amber-gold-accent-colors-strong-sans-serif-typography-and-a-clean-professional-garage-aesthetic-use-the-generated-hero-background-image-as-the-hero-section-backdrop",
+      "title": "Apply a bold, high-contrast visual theme across the entire website: dark charcoal/black backgrounds with bright amber/gold accent colors, strong sans-serif typography, and a clean, professional garage aesthetic. Use the generated hero background image as the hero section backdrop.",
+      "reqIds": [
+        "REQ-6"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-create-a-footer-with-the-business-name-kare-detailing-garage-quick-navigation-links-and-placeholder-social-media-icons",
+      "title": "Create a footer with the business name 'Kare Detailing Garage', quick navigation links, and placeholder social media icons.",
+      "reqIds": [
+        "REQ-7"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-render-the-generated-static-images-hero-background-and-logo-from-frontend-public-assets-generated-as-visual-assets-in-the-appropriate-sections-of-the-website",
+      "title": "Render the generated static images (hero background and logo) from frontend/public/assets/generated as visual assets in the appropriate sections of the website.",
+      "reqIds": [
+        "REQ-8"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-add-a-doorstep-detailing-service-option-to-the-services-section-this-should-be-presented-as-a-distinct-offering-card-or-highlighted-banner-that-clearly-communicates-mobile-on-location-detailing-the-team-comes-to-the-customer-s-home-office-or-preferred-location-include-a-name-brief-description-emphasizing-the-convenience-of-doorstep-service-and-pricing-or-a-get-a-quote-cta-that-scrolls-to-the-contact-section",
+      "title": "Add a 'Doorstep Detailing' service option to the Services section. This should be presented as a distinct offering (card or highlighted banner) that clearly communicates mobile/on-location detailing — the team comes to the customer's home, office, or preferred location. Include a name, brief description emphasizing the convenience of doorstep service, and pricing or a 'Get a Quote' CTA that scrolls to the contact section.",
+      "reqIds": [
+        "REQ-9"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-add-doorstep-detailing-as-a-selectable-option-in-the-preferred-service-dropdown-select-field-within-the-contact-booking-form-in-the-contact-section",
+      "title": "Add 'Doorstep Detailing' as a selectable option in the 'Preferred Service' dropdown/select field within the Contact / Booking form in the Contact section.",
+      "reqIds": [
+        "REQ-10"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-update-the-visual-theme-across-the-entire-website-to-use-a-black-and-red-color-combination-replace-the-existing-amber-gold-accent-colors-with-bold-red-tones-keeping-dark-black-charcoal-backgrounds-apply-this-change-consistently-to-all-components-navbar-hero-services-about-contact-footer-and-any-accent-elements-such-as-borders-buttons-highlights-and-icons",
+      "title": "Update the visual theme across the entire website to use a black and red color combination. Replace the existing amber/gold accent colors with bold red tones, keeping dark black/charcoal backgrounds. Apply this change consistently to all components: Navbar, Hero, Services, About, Contact, Footer, and any accent elements such as borders, buttons, highlights, and icons.",
+      "reqIds": [
+        "REQ-11"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-update-the-services-section-pricing-to-reflect-indian-rupee-amounts-basic-exterior-wash-at-599-interior-exterior-at-1499-and-bike-wash-at-299-replace-any-existing-pricing-labels-on-service-cards-with-these-new-values-ensure-all-currency-symbols-use-the-indian-rupee-symbol-not-dollars-or-other-currencies",
+      "title": "Update the Services section pricing to reflect Indian Rupee (₹) amounts: Basic Exterior Wash at ₹599, Interior + Exterior at ₹1499, and Bike Wash at ₹299. Replace any existing pricing labels on service cards with these new values. Ensure all currency symbols use the Indian Rupee symbol (₹), not dollars or other currencies.",
+      "reqIds": [
+        "REQ-12"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-add-the-phone-number-91-8527230903-to-the-contact-section-s-contact-information-area-display-it-as-a-clickable-tel-link-remove-any-address-or-location-fields-cards-currently-shown-in-the-contact-section",
+      "title": "Add the phone number +91 8527230903 to the Contact section's contact information area. Display it as a clickable tel: link. Remove any address or location fields/cards currently shown in the Contact section.",
+      "reqIds": [
+        "REQ-13"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-display-working-hours-in-the-contact-section-as-monday-to-sunday-8-00-am-4-00-pm-this-should-replace-any-previously-shown-working-hours-or-be-added-as-a-new-working-hours-info-card-if-none-exist",
+      "title": "Display working hours in the Contact section as Monday to Sunday, 8:00 AM – 4:00 PM. This should replace any previously shown working hours or be added as a new working hours info card if none exist.",
+      "reqIds": [
+        "REQ-14"
+      ],
+      "version": 1
+    }
+  ],
+  "new_feature_requests": [
+    {
+      "id": "AR-1",
+      "summary": "Homepage with hero section and business branding for Kare Detailing Garage",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-2",
+      "summary": "Services menu showcasing detailing packages and pricing",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-3",
+      "summary": "Contact/booking section with form or call-to-action",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-4",
+      "summary": "About section introducing the business",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-5",
+      "summary": "Add a doorstep detailing service option — highlighting mobile/on-location detailing for customers",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-6",
+      "summary": "Change theme colors to black and red combination",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-7",
+      "summary": "Add pricing in Indian Rupees: Basic Exterior Wash ₹599, Interior + Exterior ₹1499, Bike Wash ₹299",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-8",
+      "summary": "Add phone number +91 8527230903, remove address, set working hours Monday–Sunday 8AM–4PM",
+      "reqIds": [],
+      "status": "pending"
+    }
+  ],
+  "gameProjectType": "none",
+  "projectName": "Kare Detailing Garage",
+  "clarification_mode": "instant",
+  "clarification_rounds": 0
+}

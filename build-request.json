@@ -1,0 +1,101 @@
+{
+  "kind": "build_request",
+  "title": "Apply black/red theme, update pricing in INR, add phone number, remove address, set working hours",
+  "projectName": "Kare Detailing Garage",
+  "priority": "normal",
+  "requirements": [
+    {
+      "id": "REQ-11",
+      "text": "Update the visual theme across the entire website to use a black and red color combination. Replace the existing amber/gold accent colors with bold red tones, keeping dark black/charcoal backgrounds. Apply this change consistently to all components: Navbar, Hero, Services, About, Contact, Footer, and any accent elements such as borders, buttons, highlights, and icons.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-3"
+        ],
+        "quotes": [
+          "make the text and background a combination of black and red"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Primary accent color is red (not amber/gold) throughout the site",
+        "Backgrounds remain dark black/charcoal",
+        "All CTA buttons, borders, highlights, and icons use the red accent color",
+        "Theme is applied consistently across Navbar, Hero, Services, About, Contact, and Footer"
+      ]
+    },
+    {
+      "id": "REQ-12",
+      "text": "Update the Services section pricing to reflect Indian Rupee (₹) amounts: Basic Exterior Wash at ₹599, Interior + Exterior at ₹1499, and Bike Wash at ₹299. Replace any existing pricing labels on service cards with these new values. Ensure all currency symbols use the Indian Rupee symbol (₹), not dollars or other currencies.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-3"
+        ],
+        "quotes": [
+          "add pricing as basic exterior wash Rs.599 ,interior + exterior Rs.1499 and bike wash Rs. 299",
+          "all currency should in indian currency"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Basic Exterior Wash is priced at ₹599",
+        "Interior + Exterior is priced at ₹1499",
+        "Bike Wash is priced at ₹299",
+        "All prices display the ₹ symbol",
+        "No dollar or other currency symbols appear anywhere on the page"
+      ]
+    },
+    {
+      "id": "REQ-13",
+      "text": "Add the phone number +91 8527230903 to the Contact section's contact information area. Display it as a clickable tel: link. Remove any address or location fields/cards currently shown in the Contact section.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-3"
+        ],
+        "quotes": [
+          "add phone number+91 8527230903 remove addresss"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Phone number +91 8527230903 is visible in the Contact section",
+        "Phone number is a clickable tel: link",
+        "No address or location information is displayed in the Contact section"
+      ]
+    },
+    {
+      "id": "REQ-14",
+      "text": "Display working hours in the Contact section as Monday to Sunday, 8:00 AM – 4:00 PM. This should replace any previously shown working hours or be added as a new working hours info card if none exist.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-3"
+        ],
+        "quotes": [
+          "working hours monday to sunday timing 8 am to 4pm"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Working hours are shown as Monday – Sunday, 8:00 AM – 4:00 PM",
+        "Working hours are clearly labeled in the Contact section",
+        "No conflicting or outdated hours are displayed"
+      ]
+    }
+  ],
+  "constraints": [
+    "All currency must use the Indian Rupee symbol (₹)",
+    "Do not modify files under frontend/src/hooks/ (immutable paths)",
+    "Do not modify frontend/src/components/ui/ (immutable paths)",
+    "Do not modify frontend/src/main.tsx (immutable path)"
+  ],
+  "nonGoals": [
+    "Adding new service tiers beyond what is requested",
+    "Changing the layout or structure of the Services section beyond updating pricing",
+    "Adding payment or checkout functionality",
+    "Changing the booking form fields",
+    "Adding email or SMS notification on form submission"
+  ],
+  "imageRequirements": {
+    "required": [],
+    "edits": []
+  }
+}

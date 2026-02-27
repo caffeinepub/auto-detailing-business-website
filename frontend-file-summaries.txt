@@ -1,0 +1,12 @@
+{
+  "frontend/src/App.tsx": "Root application component that assembles the full single-page layout — Navbar, Hero, Services, About, Contact, and Footer — all wrapped in the dark garage theme container.",
+  "frontend/src/hooks/useQueries.ts": "React Query mutation hook `useSubmitInquiry` that wraps the backend `submitInquiry` call for the booking form.",
+  "frontend/src/components/Navbar.tsx": "Sticky top navigation bar with Kare logo, desktop nav links, red-themed \"Book Now\" CTA, and mobile Sheet-based hamburger menu (unused X import removed).",
+  "frontend/src/components/Hero.tsx": "Full-viewport hero section with background image, dark gradient overlays, red accent elements, dual CTA buttons, and animated stats row.",
+  "frontend/src/components/Services.tsx": "Three-column service cards updated with new names and Indian Rupee pricing (Basic Exterior Wash ₹599, Interior + Exterior ₹1499, Bike Wash ₹299) plus the full-width Doorstep Detailing feature card.",
+  "frontend/src/components/About.tsx": "Two-column About section with brand story copy, red-bordered blockquote, and 2×2 values grid on a dark panel background.",
+  "frontend/src/components/Contact.tsx": "Booking section with phone number +91 8527230903 (clickable tel: link), working hours Monday–Sunday 8:00 AM–4:00 PM, no address, updated service options with ₹ pricing, and the validated booking form.",
+  "frontend/src/components/Footer.tsx": "Dark footer updated with ₹ INR service pricing list, Mon–Sun 8:00 AM–4:00 PM hours, clickable phone number, social icons, and caffeine.ai attribution.",
+  "frontend/src/index.css": "Global styles with OKLCH dark-first color tokens updated to use red as the primary accent color (replacing amber/gold), plus Barlow Condensed + Inter font imports and smooth scroll.",
+  "frontend/tailwind.config.js": "Extended Tailwind config with Barlow Condensed display font, garage brand palette updated to use red tones for `garage-gold` and `garage-gold-light` tokens, red glow shadows, and sharp border-radius tokens."
+}

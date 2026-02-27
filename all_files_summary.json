@@ -1,0 +1,21 @@
+{
+  "backend/main.mo": "Motoko actor that defines an Inquiry type and exposes a `submitInquiry` function to validate and store booking inquiries in an in-memory list.",
+  "feature_evidence.json": "Feature evidence report mapping implemented feature IDs (color theme, pricing, contact info, working hours) to the specific frontend files and test IDs that satisfy each requirement.",
+  "frontend-file-summaries.txt": "JSON dictionary providing one-line descriptions of each frontend source file, serving as a human-readable index of component responsibilities and key content.",
+  "frontend/index.css": "Tailwind base stylesheet defining OKLCH CSS custom properties for light and dark color tokens used throughout the shadcn-ui component system.",
+  "frontend/index.html": "Minimal HTML entry point titled 'Kare Detailing Garage' that mounts the React app into a root div via the Vite module script.",
+  "frontend/src/App.tsx": "Root React component that composes the full single-page layout by rendering Navbar, Hero, Services, About, Contact, and Footer inside a dark-themed wrapper.",
+  "frontend/src/components/About.tsx": "Two-column About section displaying brand story text with a red-accented blockquote on the left and a 2×2 values grid (quality, craftsmanship, customer focus, passion) on the right.",
+  "frontend/src/components/Contact.tsx": "Booking section with a validated inquiry form, a clickable phone link (+91 8527230903), and working hours (Mon–Sun 8:00 AM–4:00 PM), wired to the backend via the `useSubmitInquiry` mutation hook.",
+  "frontend/src/components/Footer.tsx": "Dark footer with brand logo, quick-nav links, INR-priced services list, working hours, clickable phone number, social media icons, and a caffeine.ai attribution line.",
+  "frontend/src/components/Hero.tsx": "Full-screen hero section for Kare Detailing Garage with a background image, overlay gradients, heading, tagline, CTA buttons (Book/Services), and stat counters. Includes smooth-scroll helpers.",
+  "frontend/src/components/Navbar.tsx": "Fixed top navigation bar with scroll-aware background, logo, desktop nav links, a 'Book Now' CTA, and a mobile slide-out sheet menu using shadcn/ui Sheet.",
+  "frontend/src/components/Services.tsx": "Services section displaying three detailing packages (Basic Exterior, Interior+Exterior, Bike Wash) as cards with pricing, feature lists, and a scroll-to-contact CTA.",
+  "frontend/src/hooks/useActor.ts": "React hook that creates and caches an ICP backend actor (authenticated or anonymous) via React Query, invalidating dependent queries whenever the identity changes.",
+  "frontend/src/hooks/useInternetIdentity.ts": "Provides an InternetIdentityProvider and useInternetIdentity hook for managing DFINITY AuthClient login/logout state and persisting identity across page reloads.",
+  "frontend/src/hooks/useQueries.ts": "Exports a useSubmitInquiry mutation hook that calls the backend actor's submitInquiry method with booking form data.",
+  "frontend/src/index.css": "Global CSS importing Google Fonts and Tailwind directives, defining a dark-first black-and-red CSS variable theme for both light and dark modes.",
+  "frontend/src/main.tsx": "React app entry point that mounts the app wrapped in QueryClientProvider and InternetIdentityProvider.",
+  "frontend/tailwind.config.js": "Tailwind CSS configuration for the frontend, defining dark mode, custom fonts (Barlow Condensed, Inter), a garage brand color palette (black/red/gold using OKLCH), border radius, box shadows, accordion animations, and plugins (typography, container-queries, animate).",
+  "project_state.json": "Project state metadata for the Kare Detailing Garage website, tracking schema version, existing features (hero, services, about, contact, nav, theme, footer), business details (INR pricing, phone, hours), and architectural/issue notes."
+}

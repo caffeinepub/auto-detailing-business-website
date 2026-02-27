@@ -1,0 +1,84 @@
+{
+  "kind": "feature_evidence_report",
+  "features": [
+    {
+      "featureId": "feature-update-the-visual-theme-across-the-entire-website-to-use-a-black-and-red-color-combination-replace-the-existing-amber-gold-accent-colors-with-bold-red-tones-keeping-dark-black-charcoal-backgrounds-apply-this-change-consistently-to-all-components-navbar-hero-services-about-contact-footer-and-any-accent-elements-such-as-borders-buttons-highlights-and-icons",
+      "featureTitle": "Update the visual theme across the entire website to use a black and red color combination. Replace the existing amber/gold accent colors with bold red tones, keeping dark black/charcoal backgrounds. Apply this change consistently to all components: Navbar, Hero, Services, About, Contact, Footer, and any accent elements such as borders, buttons, highlights, and icons.",
+      "files": [
+        "frontend/src/components/About.tsx",
+        "frontend/src/components/Contact.tsx",
+        "frontend/src/components/Footer.tsx",
+        "frontend/src/components/Hero.tsx",
+        "frontend/src/components/Navbar.tsx",
+        "frontend/src/components/Services.tsx",
+        "frontend/src/index.css",
+        "frontend/tailwind.config.js"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-11"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-update-the-services-section-pricing-to-reflect-indian-rupee-amounts-basic-exterior-wash-at-599-interior-exterior-at-1499-and-bike-wash-at-299-replace-any-existing-pricing-labels-on-service-cards-with-these-new-values-ensure-all-currency-symbols-use-the-indian-rupee-symbol-not-dollars-or-other-currencies",
+      "featureTitle": "Update the Services section pricing to reflect Indian Rupee (₹) amounts: Basic Exterior Wash at ₹599, Interior + Exterior at ₹1499, and Bike Wash at ₹299. Replace any existing pricing labels on service cards with these new values. Ensure all currency symbols use the Indian Rupee symbol (₹), not dollars or other currencies.",
+      "files": [
+        "frontend/src/components/Services.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-12"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-add-the-phone-number-91-8527230903-to-the-contact-section-s-contact-information-area-display-it-as-a-clickable-tel-link-remove-any-address-or-location-fields-cards-currently-shown-in-the-contact-section",
+      "featureTitle": "Add the phone number +91 8527230903 to the Contact section's contact information area. Display it as a clickable tel: link. Remove any address or location fields/cards currently shown in the Contact section.",
+      "files": [
+        "frontend/src/components/Contact.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-13"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-display-working-hours-in-the-contact-section-as-monday-to-sunday-8-00-am-4-00-pm-this-should-replace-any-previously-shown-working-hours-or-be-added-as-a-new-working-hours-info-card-if-none-exist",
+      "featureTitle": "Display working hours in the Contact section as Monday to Sunday, 8:00 AM – 4:00 PM. This should replace any previously shown working hours or be added as a new working hours info card if none exist.",
+      "files": [
+        "frontend/src/components/Contact.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-14"
+      ],
+      "confidence": "high"
+    }
+  ]
+}
