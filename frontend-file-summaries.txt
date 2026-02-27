@@ -5,8 +5,8 @@
   "frontend/src/components/Hero.tsx": "Full-viewport hero section with background image, dark gradient overlays, red accent elements, dual CTA buttons, and animated stats row.",
   "frontend/src/components/Services.tsx": "Three-column service cards updated with new names and Indian Rupee pricing (Basic Exterior Wash ₹599, Interior + Exterior ₹1499, Bike Wash ₹299) plus the full-width Doorstep Detailing feature card.",
   "frontend/src/components/About.tsx": "Two-column About section with brand story copy, red-bordered blockquote, and 2×2 values grid on a dark panel background.",
-  "frontend/src/components/Contact.tsx": "Booking section with phone number +91 8527230903 (clickable tel: link), working hours Monday–Sunday 8:00 AM–4:00 PM, no address, updated service options with ₹ pricing, and the validated booking form.",
-  "frontend/src/components/Footer.tsx": "Dark footer updated with ₹ INR service pricing list, Mon–Sun 8:00 AM–4:00 PM hours, clickable phone number, social icons, and caffeine.ai attribution.",
+  "frontend/src/components/Contact.tsx": "Booking section with phone (+91 8527230903) and email (khushpal1011@gmail.com) as clickable tel:/mailto: links, working hours Mon–Sun 8AM–4PM, service options with ₹ pricing, and the validated booking form with inline error handling.",
+  "frontend/src/components/Footer.tsx": "Dark footer updated to a 4-column layout adding a dedicated \"Contact Us\" column with clickable phone (+91 8527230903) and email (khushpal1011@gmail.com) links alongside working hours, plus quick links, services list, brand section, and caffeine.ai attribution.",
   "frontend/src/index.css": "Global styles with OKLCH dark-first color tokens updated to use red as the primary accent color (replacing amber/gold), plus Barlow Condensed + Inter font imports and smooth scroll.",
   "frontend/tailwind.config.js": "Extended Tailwind config with Barlow Condensed display font, garage brand palette updated to use red tones for `garage-gold` and `garage-gold-light` tokens, red glow shadows, and sharp border-radius tokens."
 }

@@ -1,13 +1,12 @@
 # Specification
 
 ## Summary
-**Goal:** Update the Kare Detailing Garage website with a black/red theme, INR pricing, updated contact info, and working hours.
+**Goal:** Add Gmail address and mobile number as clickable contact links in the Contact section and Footer of the Kare Detailing Garage site.
 
 **Planned changes:**
-- Replace amber/gold accent colors with bold red throughout all components (Navbar, Hero, Services, About, Contact, Footer), keeping dark black/charcoal backgrounds
-- Update service pricing to Indian Rupee: Basic Exterior Wash ₹599, Interior + Exterior ₹1499, Bike Wash ₹299
-- Add clickable phone number +91 8527230903 to the Contact section
-- Remove address/location fields from the Contact section
-- Display working hours in the Contact section as Monday – Sunday, 8:00 AM – 4:00 PM
+- Add `khushpal1011@gmail.com` as a clickable `mailto:` link in the Contact section
+- Add `+91 8527230903` as a clickable `tel:` link in the Contact section (if not already present)
+- Display both the email and phone number in the Footer as clickable links
+- Style both links consistently with the existing black and red theme
 
-**User-visible outcome:** The website displays a consistent black and red color scheme, shows INR pricing on service cards, and the Contact section shows a phone number and working hours with no address.
+**User-visible outcome:** Visitors can see and click the email address and phone number in both the Contact section and the Footer to quickly reach out via email or phone call.

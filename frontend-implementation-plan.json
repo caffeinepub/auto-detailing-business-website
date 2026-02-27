@@ -1,107 +1,29 @@
 {
   "kind": "implementation_plan",
   "version": "1.0",
-  "title": "Apply black/red theme, update pricing in INR, add phone number, remove address, set working hours",
+  "title": "Add Gmail and mobile number to Contact section",
   "requirements": [
     {
-      "id": "REQ-11",
-      "summary": "Update the visual theme across the entire website to use a black and red color combination",
+      "id": "REQ-15",
+      "summary": "Add Gmail address khushpal1011@gmail.com and mobile number +91 8527230903 as clickable links in the Contact section and Footer",
       "acceptanceCriteria": [
-        "Primary accent color is red (not amber/gold) throughout the site",
-        "Backgrounds remain dark black/charcoal",
-        "All CTA buttons, borders, highlights, and icons use the red accent color",
-        "Theme is applied consistently across Navbar, Hero, Services, About, Contact, and Footer"
+        "The email address khushpal1011@gmail.com appears in the Contact section as an <a href='mailto:khushpal1011@gmail.com'> link.",
+        "The phone number +91 8527230903 appears in the Contact section as an <a href='tel:+918527230903'> link.",
+        "Both the email and phone number are also displayed in the Footer.",
+        "Clicking the email link opens the user's email client with khushpal1011@gmail.com as the recipient.",
+        "Clicking the phone link initiates a call to +91 8527230903 on supported devices.",
+        "Styling is consistent with the existing black and red theme."
       ],
       "file_operations": [
         {
-          "path": "frontend/src/index.css",
-          "operation": "modify",
-          "description": "Replace amber/gold CSS custom properties with red accent colors. Update the primary color tokens to use red shades (e.g., OKLCH equivalents of red-500, red-600) instead of amber. Keep dark backgrounds intact."
-        },
-        {
-          "path": "frontend/tailwind.config.js",
-          "operation": "modify",
-          "description": "Update the garage brand palette colors from amber/gold to red tones. Replace amber-* color values with red equivalents in the theme extension while preserving the dark background tokens."
-        },
-        {
-          "path": "frontend/src/components/Navbar.tsx",
-          "operation": "modify",
-          "description": "Ensure all accent elements (CTA button, hover states, active states) use the new red theme instead of amber/gold. Update any inline Tailwind classes that reference amber colors to use red."
-        },
-        {
-          "path": "frontend/src/components/Hero.tsx",
-          "operation": "modify",
-          "description": "Update CTA buttons, borders, and accent elements to use red instead of amber/gold. Ensure gradient overlays and highlights reflect the new color scheme."
-        },
-        {
-          "path": "frontend/src/components/Services.tsx",
-          "operation": "modify",
-          "description": "Replace amber/gold accent colors in service cards, borders, CTA buttons, and highlights with red. Maintain dark backgrounds."
-        },
-        {
-          "path": "frontend/src/components/About.tsx",
-          "operation": "modify",
-          "description": "Update the gold-bordered blockquote and any accent elements to use red borders and highlights instead of amber/gold."
-        },
-        {
           "path": "frontend/src/components/Contact.tsx",
           "operation": "modify",
-          "description": "Replace amber/gold accent colors in contact cards, form elements, and CTA buttons with red. Ensure form focus states and highlights use the new red theme."
+          "description": "Add the Gmail address khushpal1011@gmail.com as a clickable mailto: link in the contact information area. Ensure the existing phone number +91 8527230903 is displayed as a clickable tel: link. Position both contact details prominently near the working hours section. Use consistent styling with the existing black and red theme (text-red-500 for highlights, hover states with hover:text-red-400)."
         },
         {
           "path": "frontend/src/components/Footer.tsx",
           "operation": "modify",
-          "description": "Update any amber/gold accent colors in links, social media icons, and borders to red. Ensure consistency with the new theme."
-        }
-      ]
-    },
-    {
-      "id": "REQ-12",
-      "summary": "Update the Services section pricing to reflect Indian Rupee amounts",
-      "acceptanceCriteria": [
-        "Basic Exterior Wash is priced at ₹599",
-        "Interior + Exterior is priced at ₹1499",
-        "Bike Wash is priced at ₹299",
-        "All prices display the ₹ symbol",
-        "No dollar or other currency symbols appear anywhere on the page"
-      ],
-      "file_operations": [
-        {
-          "path": "frontend/src/components/Services.tsx",
-          "operation": "modify",
-          "description": "Update the three service cards to display the new Indian Rupee pricing: Basic Exterior Wash at ₹599, Interior + Exterior at ₹1499, and Bike Wash at ₹299. Replace all existing pricing labels and currency symbols with the ₹ symbol. Ensure the mapping matches the service names correctly (Basic Wash → Basic Exterior Wash, Full Detail → Interior + Exterior, and identify or add the Bike Wash service if not present)."
-        }
-      ]
-    },
-    {
-      "id": "REQ-13",
-      "summary": "Add phone number +91 8527230903 to Contact section and remove address information",
-      "acceptanceCriteria": [
-        "Phone number +91 8527230903 is visible in the Contact section",
-        "Phone number is a clickable tel: link",
-        "No address or location information is displayed in the Contact section"
-      ],
-      "file_operations": [
-        {
-          "path": "frontend/src/components/Contact.tsx",
-          "operation": "modify",
-          "description": "Add the phone number +91 8527230903 as a clickable tel: link in the contact information area. Remove any address or location cards/fields currently displayed in the Contact section. Ensure the phone number is prominently shown alongside other contact info."
-        }
-      ]
-    },
-    {
-      "id": "REQ-14",
-      "summary": "Display working hours Monday to Sunday, 8:00 AM – 4:00 PM in the Contact section",
-      "acceptanceCriteria": [
-        "Working hours are shown as Monday – Sunday, 8:00 AM – 4:00 PM",
-        "Working hours are clearly labeled in the Contact section",
-        "No conflicting or outdated hours are displayed"
-      ],
-      "file_operations": [
-        {
-          "path": "frontend/src/components/Contact.tsx",
-          "operation": "modify",
-          "description": "Add or update the working hours display in the Contact section to show 'Monday – Sunday, 8:00 AM – 4:00 PM'. If a working hours card already exists, replace its content; otherwise, add a new info card clearly labeled as 'Working Hours'."
+          "description": "Add the Gmail address khushpal1011@gmail.com as a clickable mailto: link in the Footer's contact information area. Ensure the phone number +91 8527230903 is also present as a clickable tel: link. Display both below or near the existing working hours. Apply consistent styling using the black and red theme (text-gray-400 for base text, hover:text-red-500 for interactive states)."
         }
       ]
     }

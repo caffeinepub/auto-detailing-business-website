@@ -1,98 +1,40 @@
 {
   "kind": "build_request",
-  "title": "Apply black/red theme, update pricing in INR, add phone number, remove address, set working hours",
+  "title": "Add Gmail and mobile number to Contact section",
   "projectName": "Kare Detailing Garage",
   "priority": "normal",
   "requirements": [
     {
-      "id": "REQ-11",
-      "text": "Update the visual theme across the entire website to use a black and red color combination. Replace the existing amber/gold accent colors with bold red tones, keeping dark black/charcoal backgrounds. Apply this change consistently to all components: Navbar, Hero, Services, About, Contact, Footer, and any accent elements such as borders, buttons, highlights, and icons.",
+      "id": "REQ-15",
+      "text": "Add the Gmail address khushpal1011@gmail.com to the Contact section's contact information area. Display it as a clickable mailto: link alongside the existing phone number (+91 8527230903). Also ensure the mobile number +91 8527230903 is prominently displayed as a clickable tel: link in the contact info area (if not already present). Both pieces of contact info should be visible in the Contact section and in the Footer.",
       "target": "frontend",
       "source": {
         "messageIds": [
-          "msg-3"
+          "msg-latest"
         ],
         "quotes": [
-          "make the text and background a combination of black and red"
+          "ad my gmail khushpal1011@gmail.com and mobile number+91 8527230903"
         ]
       },
       "acceptanceCriteria": [
-        "Primary accent color is red (not amber/gold) throughout the site",
-        "Backgrounds remain dark black/charcoal",
-        "All CTA buttons, borders, highlights, and icons use the red accent color",
-        "Theme is applied consistently across Navbar, Hero, Services, About, Contact, and Footer"
-      ]
-    },
-    {
-      "id": "REQ-12",
-      "text": "Update the Services section pricing to reflect Indian Rupee (₹) amounts: Basic Exterior Wash at ₹599, Interior + Exterior at ₹1499, and Bike Wash at ₹299. Replace any existing pricing labels on service cards with these new values. Ensure all currency symbols use the Indian Rupee symbol (₹), not dollars or other currencies.",
-      "target": "frontend",
-      "source": {
-        "messageIds": [
-          "msg-3"
-        ],
-        "quotes": [
-          "add pricing as basic exterior wash Rs.599 ,interior + exterior Rs.1499 and bike wash Rs. 299",
-          "all currency should in indian currency"
-        ]
-      },
-      "acceptanceCriteria": [
-        "Basic Exterior Wash is priced at ₹599",
-        "Interior + Exterior is priced at ₹1499",
-        "Bike Wash is priced at ₹299",
-        "All prices display the ₹ symbol",
-        "No dollar or other currency symbols appear anywhere on the page"
-      ]
-    },
-    {
-      "id": "REQ-13",
-      "text": "Add the phone number +91 8527230903 to the Contact section's contact information area. Display it as a clickable tel: link. Remove any address or location fields/cards currently shown in the Contact section.",
-      "target": "frontend",
-      "source": {
-        "messageIds": [
-          "msg-3"
-        ],
-        "quotes": [
-          "add phone number+91 8527230903 remove addresss"
-        ]
-      },
-      "acceptanceCriteria": [
-        "Phone number +91 8527230903 is visible in the Contact section",
-        "Phone number is a clickable tel: link",
-        "No address or location information is displayed in the Contact section"
-      ]
-    },
-    {
-      "id": "REQ-14",
-      "text": "Display working hours in the Contact section as Monday to Sunday, 8:00 AM – 4:00 PM. This should replace any previously shown working hours or be added as a new working hours info card if none exist.",
-      "target": "frontend",
-      "source": {
-        "messageIds": [
-          "msg-3"
-        ],
-        "quotes": [
-          "working hours monday to sunday timing 8 am to 4pm"
-        ]
-      },
-      "acceptanceCriteria": [
-        "Working hours are shown as Monday – Sunday, 8:00 AM – 4:00 PM",
-        "Working hours are clearly labeled in the Contact section",
-        "No conflicting or outdated hours are displayed"
+        "The email address khushpal1011@gmail.com appears in the Contact section as an <a href='mailto:khushpal1011@gmail.com'> link.",
+        "The phone number +91 8527230903 appears in the Contact section as an <a href='tel:+918527230903'> link.",
+        "Both the email and phone number are also displayed in the Footer.",
+        "Clicking the email link opens the user's email client with khushpal1011@gmail.com as the recipient.",
+        "Clicking the phone link initiates a call to +91 8527230903 on supported devices.",
+        "Styling is consistent with the existing black and red theme."
       ]
     }
   ],
   "constraints": [
-    "All currency must use the Indian Rupee symbol (₹)",
-    "Do not modify files under frontend/src/hooks/ (immutable paths)",
-    "Do not modify frontend/src/components/ui/ (immutable paths)",
-    "Do not modify frontend/src/main.tsx (immutable path)"
+    "Do not change the existing black and red visual theme.",
+    "Do not remove the existing phone number, working hours, or any other contact info already present.",
+    "Do not modify any files under frontend/src/hooks/ or frontend/src/components/ui."
   ],
   "nonGoals": [
-    "Adding new service tiers beyond what is requested",
-    "Changing the layout or structure of the Services section beyond updating pricing",
-    "Adding payment or checkout functionality",
-    "Changing the booking form fields",
-    "Adding email or SMS notification on form submission"
+    "Adding a contact form backend integration for email.",
+    "Any changes to services, pricing, or other sections.",
+    "Changing the site theme or layout."
   ],
   "imageRequirements": {
     "required": [],

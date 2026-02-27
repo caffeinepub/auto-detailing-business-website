@@ -1,71 +1,26 @@
 {
   "kind": "coverage_report",
   "version": "1.0",
-  "generatedAt": "2026-02-27T10:39:39.081Z",
+  "generatedAt": "2026-02-27T10:58:48.500Z",
   "sources": {
     "buildRequest": true,
     "implementationPlan": true
   },
   "requirements": {
-    "total": 4,
-    "implemented": 4,
+    "total": 1,
+    "implemented": 1,
     "items": [
       {
-        "id": "REQ-11",
-        "summary": "Update the visual theme across the entire website to use a black and red color combination. Replace the existing amber/gold accent colors with bold red tones, keeping dark black/charcoal backgrounds. Apply this change consistently to all components: Navbar, Hero, Services, About, Contact, Footer, and any accent elements such as borders, buttons, highlights, and icons.",
+        "id": "REQ-15",
+        "summary": "Add the Gmail address khushpal1011@gmail.com to the Contact section's contact information area. Display it as a clickable mailto: link alongside the existing phone number (+91 8527230903). Also ensure the mobile number +91 8527230903 is prominently displayed as a clickable tel: link in the contact info area (if not already present). Both pieces of contact info should be visible in the Contact section and in the Footer.",
         "status": "implemented",
         "plannedFiles": [
-          "frontend/src/index.css",
-          "frontend/tailwind.config.js",
-          "frontend/src/components/Navbar.tsx",
-          "frontend/src/components/Hero.tsx",
-          "frontend/src/components/Services.tsx",
-          "frontend/src/components/About.tsx",
           "frontend/src/components/Contact.tsx",
           "frontend/src/components/Footer.tsx"
         ],
         "matchedFiles": [
-          "frontend/src/index.css",
-          "frontend/tailwind.config.js",
-          "frontend/src/components/Navbar.tsx",
-          "frontend/src/components/Hero.tsx",
-          "frontend/src/components/Services.tsx",
-          "frontend/src/components/About.tsx",
           "frontend/src/components/Contact.tsx",
           "frontend/src/components/Footer.tsx"
-        ]
-      },
-      {
-        "id": "REQ-12",
-        "summary": "Update the Services section pricing to reflect Indian Rupee (₹) amounts: Basic Exterior Wash at ₹599, Interior + Exterior at ₹1499, and Bike Wash at ₹299. Replace any existing pricing labels on service cards with these new values. Ensure all currency symbols use the Indian Rupee symbol (₹), not dollars or other currencies.",
-        "status": "implemented",
-        "plannedFiles": [
-          "frontend/src/components/Services.tsx"
-        ],
-        "matchedFiles": [
-          "frontend/src/components/Services.tsx"
-        ]
-      },
-      {
-        "id": "REQ-13",
-        "summary": "Add the phone number +91 8527230903 to the Contact section's contact information area. Display it as a clickable tel: link. Remove any address or location fields/cards currently shown in the Contact section.",
-        "status": "implemented",
-        "plannedFiles": [
-          "frontend/src/components/Contact.tsx"
-        ],
-        "matchedFiles": [
-          "frontend/src/components/Contact.tsx"
-        ]
-      },
-      {
-        "id": "REQ-14",
-        "summary": "Display working hours in the Contact section as Monday to Sunday, 8:00 AM – 4:00 PM. This should replace any previously shown working hours or be added as a new working hours info card if none exist.",
-        "status": "implemented",
-        "plannedFiles": [
-          "frontend/src/components/Contact.tsx"
-        ],
-        "matchedFiles": [
-          "frontend/src/components/Contact.tsx"
         ]
       }
     ]
@@ -75,14 +30,8 @@
     "feature_evidence.json",
     "frontend-file-summaries.txt",
     "frontend-implementation-plan.json",
-    "frontend/src/components/About.tsx",
     "frontend/src/components/Contact.tsx",
     "frontend/src/components/Footer.tsx",
-    "frontend/src/components/Hero.tsx",
-    "frontend/src/components/Navbar.tsx",
-    "frontend/src/components/Services.tsx",
-    "frontend/src/index.css",
-    "frontend/tailwind.config.js",
     "project_state.json",
     "scratch/component-selection.json",
     "spec.md",

@@ -1,7 +1,7 @@
 {
   "schemaVersion": "1.0.0",
-  "projectStateVersion": 7,
-  "summary": "Website for Kare Detailing Garage — an auto detailing business website with black/red theme, Indian Rupee pricing (Basic Exterior Wash ₹599, Interior + Exterior ₹1499, Bike Wash ₹299), phone number +91 8527230903, no address, and working hours Monday–Sunday 8AM–4PM.",
+  "projectStateVersion": 9,
+  "summary": "Website for Kare Detailing Garage — an auto detailing business website with black/red theme, Indian Rupee pricing (Basic Exterior Wash ₹599, Interior + Exterior ₹1499, Bike Wash ₹299), phone number +91 8527230903, email khushpal1011@gmail.com, no address, and working hours Monday–Sunday 8AM–4PM.",
   "architectural_notes": [],
   "known_issues": [],
   "isFixRequest": false,
@@ -117,6 +117,14 @@
         "REQ-14"
       ],
       "version": 1
+    },
+    {
+      "id": "feature-add-the-gmail-address-khushpal1011-gmail-com-to-the-contact-section-s-contact-information-area-display-it-as-a-clickable-mailto-link-alongside-the-existing-phone-number-91-8527230903-also-ensure-the-mobile-number-91-8527230903-is-prominently-displayed-as-a-clickable-tel-link-in-the-contact-info-area-if-not-already-present-both-pieces-of-contact-info-should-be-visible-in-the-contact-section-and-in-the-footer",
+      "title": "Add the Gmail address khushpal1011@gmail.com to the Contact section's contact information area. Display it as a clickable mailto: link alongside the existing phone number (+91 8527230903). Also ensure the mobile number +91 8527230903 is prominently displayed as a clickable tel: link in the contact info area (if not already present). Both pieces of contact info should be visible in the Contact section and in the Footer.",
+      "reqIds": [
+        "REQ-15"
+      ],
+      "version": 1
     }
   ],
   "new_feature_requests": [
@@ -165,6 +173,12 @@
     {
       "id": "AR-8",
       "summary": "Add phone number +91 8527230903, remove address, set working hours Monday–Sunday 8AM–4PM",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-9",
+      "summary": "Add Gmail khushpal1011@gmail.com and mobile number +91 8527230903 to the contact section",
       "reqIds": [],
       "status": "pending"
     }

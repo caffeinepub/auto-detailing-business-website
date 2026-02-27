@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Phone, Clock, CheckCircle, AlertCircle, Loader2, MapPin } from 'lucide-react';
+import { Phone, Clock, CheckCircle, AlertCircle, Loader2, MapPin, Mail } from 'lucide-react';
 import { Input } from '@/components/ui/input';
 import { Label } from '@/components/ui/label';
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select';
@@ -108,6 +108,25 @@ export default function Contact() {
                   +91 8527230903
                 </a>
                 <p className="text-sm text-garage-muted mt-0.5">Tap to call us</p>
+              </div>
+            </div>
+
+            {/* Email */}
+            <div className="flex items-start gap-4 p-5 bg-garage-panel border border-garage-gold/10">
+              <div className="w-10 h-10 flex-shrink-0 flex items-center justify-center bg-garage-gold/10">
+                <Mail className="h-5 w-5 text-garage-gold" />
+              </div>
+              <div>
+                <p className="font-display font-bold text-xs tracking-widest uppercase text-garage-muted mb-1">
+                  Email
+                </p>
+                <a
+                  href="mailto:khushpal1011@gmail.com"
+                  className="font-display font-black text-garage-light text-base hover:text-garage-gold transition-colors duration-200 break-all"
+                >
+                  khushpal1011@gmail.com
+                </a>
+                <p className="text-sm text-garage-muted mt-0.5">Tap to email us</p>
               </div>
             </div>
 

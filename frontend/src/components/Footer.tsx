@@ -1,5 +1,5 @@
 import { SiFacebook, SiInstagram, SiX } from 'react-icons/si';
-import { Heart } from 'lucide-react';
+import { Heart, Phone, Mail } from 'lucide-react';
 
 const navLinks = [
   { label: 'Home', href: '#home' },
@@ -22,7 +22,7 @@ export default function Footer() {
     <footer className="bg-garage-panel border-t border-garage-gold/20">
       {/* Main Footer */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-16">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-10">
           {/* Brand */}
           <div className="md:col-span-1">
             <div className="flex items-center gap-3 mb-4">
@@ -91,32 +91,63 @@ export default function Footer() {
                 'Basic Exterior Wash — ₹599',
                 'Interior + Exterior — ₹1499',
                 'Bike Wash — ₹299',
+                'Doorstep Detailing',
               ].map((service) => (
                 <li key={service}>
                   <button
                     onClick={() => scrollToSection('#services')}
-                    className="font-display font-semibold text-sm tracking-wider text-garage-muted hover:text-garage-gold transition-colors duration-200"
+                    className="font-display font-semibold text-sm tracking-wider text-garage-muted hover:text-garage-gold transition-colors duration-200 text-left"
                   >
                     {service}
                   </button>
                 </li>
               ))}
             </ul>
+          </div>
 
-            <div className="mt-6 p-4 border border-garage-gold/20 bg-garage-gold/5">
-              <p className="font-display font-bold text-xs tracking-widest uppercase text-garage-gold mb-1">
-                Hours
-              </p>
-              <p className="text-sm text-garage-muted">Mon – Sun: 8:00 AM – 4:00 PM</p>
-              <p className="text-sm text-garage-muted mt-1">
-                <a
-                  href="tel:+918527230903"
-                  className="hover:text-garage-gold transition-colors duration-200"
-                >
-                  +91 8527230903
-                </a>
-              </p>
-            </div>
+          {/* Contact Info */}
+          <div>
+            <h3 className="font-display font-black text-sm tracking-[0.3em] uppercase text-garage-gold mb-5">
+              Contact Us
+            </h3>
+            <ul className="space-y-4">
+              {/* Phone */}
+              <li className="flex items-start gap-3">
+                <Phone className="h-4 w-4 text-garage-gold flex-shrink-0 mt-0.5" />
+                <div>
+                  <a
+                    href="tel:+918527230903"
+                    className="font-display font-semibold text-sm text-garage-muted hover:text-garage-gold transition-colors duration-200"
+                  >
+                    +91 8527230903
+                  </a>
+                </div>
+              </li>
+              {/* Email */}
+              <li className="flex items-start gap-3">
+                <Mail className="h-4 w-4 text-garage-gold flex-shrink-0 mt-0.5" />
+                <div>
+                  <a
+                    href="mailto:khushpal1011@gmail.com"
+                    className="font-display font-semibold text-sm text-garage-muted hover:text-garage-gold transition-colors duration-200 break-all"
+                  >
+                    khushpal1011@gmail.com
+                  </a>
+                </div>
+              </li>
+              {/* Hours */}
+              <li className="flex items-start gap-3">
+                <div className="w-4 h-4 flex-shrink-0 mt-0.5 flex items-center justify-center">
+                  <span className="text-garage-gold text-xs font-bold">⏰</span>
+                </div>
+                <div>
+                  <p className="font-display font-semibold text-sm text-garage-muted">
+                    Mon – Sun
+                  </p>
+                  <p className="text-xs text-garage-muted/70 mt-0.5">8:00 AM – 4:00 PM</p>
+                </div>
+              </li>
+            </ul>
           </div>
         </div>
       </div>
@@ -124,10 +155,10 @@ export default function Footer() {
       {/* Bottom Bar */}
       <div className="border-t border-garage-gold/10">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-5 flex flex-col sm:flex-row items-center justify-between gap-3">
-          <p className="text-xs text-garage-muted font-display tracking-wider">
+          <p className="text-garage-muted text-xs font-display tracking-wider">
             © {year} Kare Detailing Garage. All rights reserved.
           </p>
-          <p className="text-xs text-garage-muted flex items-center gap-1.5">
+          <p className="text-garage-muted text-xs flex items-center gap-1.5">
             Built with{' '}
             <Heart className="h-3 w-3 text-garage-gold fill-garage-gold" />{' '}
             using{' '}
@@ -135,7 +166,7 @@ export default function Footer() {
               href={`https://caffeine.ai/?utm_source=Caffeine-footer&utm_medium=referral&utm_content=${appId}`}
               target="_blank"
               rel="noopener noreferrer"
-              className="text-garage-gold hover:text-garage-gold-light transition-colors duration-200 font-semibold"
+              className="text-garage-gold hover:text-garage-gold-light transition-colors duration-200"
             >
               caffeine.ai
             </a>
